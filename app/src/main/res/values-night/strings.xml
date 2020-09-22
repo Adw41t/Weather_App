@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="app_mode">Light/Dark</string>
+    <string name="dark_theme_preference">Dark Theme</string>
+    <string name="light_theme_preference">Light Theme</string>
+    <string name="system_theme_preference">System Default Theme</string>
+    <string name="theme_preferences_key">THEME</string>
+    <string name="latitude_value">Latitude</string>
+    <string name="longitude_value">Longitude</string>
+</resources>

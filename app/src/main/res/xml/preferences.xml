@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <PreferenceCategory
+        android:title="Weather Location">
+        <SwitchPreference
+            android:key="USE_DEVICE_LOCATION"
+            android:title="Use device location"
+            android:summary="Allow the app to get your location"
+            android:defaultValue="true"
+            android:disableDependentsState="true"/>
+        <!--            when this is off edit text should be on-->
+
+        <EditTextPreference
+            android:key="CUSTOM_LOCATION"
+            android:title="Location"
+            android:summary="The location of which the weather is"
+            android:defaultValue="Thane"
+            android:dependency="USE_DEVICE_LOCATION"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Units">
+        <ListPreference
+            android:key="UNIT_SYSTEM"
+            android:title="Unit System"
+            android:summary="%s"
+            android:defaultValue="metric"
+            android:entries="@array/unitSystemEntries"
+            android:entryValues="@array/unitSystemValues"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Theme">
+        <ListPreference
+            android:id="@+id/themes"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values"
+            android:key="@string/theme_preferences_key"
+            android:title="Display Theme"
+            android:summary="%s"
+            android:defaultValue="@string/system_theme_preference"/>
+    </PreferenceCategory>
+</PreferenceScreen>

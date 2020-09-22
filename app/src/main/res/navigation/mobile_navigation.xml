@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/currentWeatherFragment">
+    <fragment
+        android:id="@+id/currentWeatherFragment"
+        android:name="com.unique.weatherapp.ui.openweather.current.OpenWeatherFragment"
+        android:label="CurrentWeatherFragment" />
+    <fragment
+        android:id="@+id/futureListWeatherFragment"
+        android:name="com.unique.weatherapp.ui.openweather.daily.ListFragment"
+        android:label="FutureListWeatherFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.unique.weatherapp.ui.settings.SettingsFragment"
+        android:label="SettingsFragment" />
+</navigation>

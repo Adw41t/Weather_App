@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unitSystemValues">
+        <item>metric</item>
+        <item>imperial</item>
+    </string-array>
+
+    <string-array name="unitSystemEntries">
+        <item>Metric (°C)</item>
+        <item>Imperial (°F)</item>
+    </string-array>
+
+    <string-array name="theme_entries">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>System default</item>
+
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>@string/light_theme_preference</item>
+        <item>@string/dark_theme_preference</item>
+        <item>@string/system_theme_preference</item>
+    </string-array>
+</resources>
